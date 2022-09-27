@@ -1,0 +1,83 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    color:black;
+    text-shadow:1px 1px 0 white;
+    background: url(PORTADA_login.jpg);
+    background-size: 100%; 
+    font-size: 20px;
+    
+
+}
+
+.g-recaptcha{
+    position: absolute;
+    margin: center;
+   
+   
+}
+
+.form-container{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   background-color: rgb(187, 174, 174);
+   opacity: 1;
+    width: 500px;
+    padding: 130px  30px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 60px #000;
+
+}
+.control input{
+    position: relative;
+    padding: 10px;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    color:#000;
+    background: #ddd;
+    outline: none;
+    border: none;
+    margin: 1em 0;
+    top: -20px;
+}
+.control button[type="submit"]{
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
+    background: rgb(175, 0, 35);
+    width: 200px;
+    padding: 1em 1em 1em 1em;
+    right: 180px;
+    bottom:20px;
+}
+
+.form-container label{
+    position: relative;
+    color:black;
+    text-shadow:1px 1px 0 white;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 1rem;
+    top: -20px;
+    font-weight: bold;
+}
+
+.form-container h1{
+    position: absolute;
+    left: 210px;
+    
+    top: 20px;
+    
+    color:black;
+    text-shadow:1px 1px 0 white;
+    font-size: 2em;
+    text-align: left;
+    margin-bottom: 1rem;
+    
+}

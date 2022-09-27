@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso_Nuevo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="resources/css/estilos.css">
+    
+
+    <header>
+        <div class="header-content">
+            <div class="logo" onclick="location.href='/home'";>
+                <h1>Apoyo<b>UNAB</b></h1>
+            </div>
+
+            <div class="menu">
+
+                <nav>
+                    <ul>
+                        <li><a href="/home"><i class="fas fa-home"></i>  Inicio</a></li>
+                        <li class="menu-selected"><a href="/logout">Cerrar Sesion</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+
+        <body>
+          
+              <div class="form-container">
+                  <h1>Crear Caso</h1>
+
+                  <div class="alerta2">
+                    <% if (Alerta.length > 0){ %>
+                        <div id=mensaje class="alert alert-success" role="alert">
+                            
+                            <%= Alerta %>
+                        </div>
+                        <% } %>
+                </div>
+
+                  <form action="/caso-nuevo" method="post">
+                      <div class="control">
+                        <label for="titulo_caso">Titulo</label>
+                        <input type="text" name="titulo_caso" id=titulo_c placeholder="Titulo">
+                      </div>
+                      <div class="control">
+                        
+                            <label for="categ_caso">Categoria</label>
+                            <select name="categ_caso" id="category" placeholder="categoria">
+                                <option> </option>
+                                <option name="categ_caso" value="Informatica">Informatica</option>
+                                <option  name="categ_caso" value="General">General</option>
+                            </select>
+  
+                      </div>
+                      <div class="control">
+                          
+                        <label for="texto_caso">Descripcion</label><textarea name="texto_caso" id="texto_caso" rows="5" placeholder="Escriba su caso"></textarea> 
+                      </div>
+                      <div class="control">
+                        <input type="submit"  value="Crear Caso">
+                      </div>
+                  </form>
+              </div>
+          
+        </body>
+       
+<!--header -
+
+<div class="container  ">
+
+    <div class="row p-2 ">
+        <div class="col-md-6 offset-md-3 ">
+            <div class="card position-absolute top-50 start-50 translate-middle  ">
+                <div class="card-body ">
+                    <h1 class="card-title "> Crear nuevo caso</h1>
+                    <form action="/caso-nuevo" method="post">
+                        <div class="form-group mt-4">
+                            <label for="titulo_caso">Titulo del caso</label>
+                            <input type="text" class="form-control" name="titulo_caso">
+                        </div>
+                            <div class="form-group mt-4 ">
+                                <label for="categ_caso">Categoria</label>
+                                <input type="text" class="form-control" name="categ_caso">
+                            </div>
+                                <div class="form-group mt-4">
+                                <label for="texto_caso">Texto del Caso</label>
+                                <textarea name="texto_caso" rows="5" class="form-control" placeholder="Escriba su material"></textarea>
+                               
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-4">
+                            Crear caso
+                        </button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+ MENU-->
